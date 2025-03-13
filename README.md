@@ -14,13 +14,16 @@ This API allows users to authenticate (sign up & log in) and manage interview se
    cd Vector-interview-api
 
 2. Install dependencies:
+   ```bash
     npm install
 
 3. Set up environment variables in a .env file:
+   ```
     MONGODB_CONNECTION_STRING=your_mongodb_url
     JWT_SECRET=your_secret_key
 
 4. Start the server:
+   ```
     npm run start
 
 📌 Authentication API
@@ -28,28 +31,35 @@ This API allows users to authenticate (sign up & log in) and manage interview se
  1. User Sign Up
 
 Endpoint: POST /api/auth/signup
+
 Request Body:
+ ```
 {
-  "fullName": "John Doe"
+  "fullName": "John Doe",
   "email": "user@example.com",
   "password": "yourpassword"
 }
 
 Response:
+ ```
 {
   "message": "User registered successfully",
   "token": "your-jwt-token"
 }
 
 2. User Login
+
 Endpoint: POST /api/auth/login
+
 Request Body:
+ ```
 {
   "email": "user@example.com",
   "password": "yourpassword"
 }
 
 Response:
+ ```
 {
   "message": "Login successful",
   "token": "your-jwt-token"
@@ -57,8 +67,11 @@ Response:
 
 📌 Interview API
  1. Create an Interview
+
 Endpoint: POST /api/interviews/create
+
 Request Body:
+ ```
 {
   "title": "Backend Developer Interview",
   "description": "Interview for backend developer position",
@@ -69,6 +82,7 @@ Request Body:
 }
 
 Response:
+ ```
 {
   "_id": "650abc123456",
   "title": "Backend Developer Interview",
