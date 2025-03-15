@@ -5,9 +5,9 @@ This API allows users to authenticate (sign up & log in) and manage interview se
 
 ---
 
-## 🚀 **Getting Started**
+## **Getting Started**
 
-### 🛠️ **Installation**
+###  **Installation**
 1. Clone the repository:
    ```bash
    git clone https://github.com/PATIENCE-ONAH/Vector-interview-api.git
@@ -41,7 +41,7 @@ Request Body:
 }
 
 Response:
- ```
+```
 {
   "message": "User registered successfully",
   "token": "your-jwt-token"
@@ -59,7 +59,7 @@ Request Body:
 }
 
 Response:
- ```
+```
 {
   "message": "Login successful",
   "token": "your-jwt-token"
@@ -82,7 +82,7 @@ Request Body:
 }
 
 Response:
- ```
+```
 {
   "_id": "650abc123456",
   "title": "Backend Developer Interview",

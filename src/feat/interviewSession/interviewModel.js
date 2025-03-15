@@ -16,6 +16,8 @@ const InterviewSchema = new mongoose.Schema({
 }, 
 { timestamps: true });
 
+InterviewSchema.index({ createdAt: -1 });
+
 const InterviewModel = mongoose.model("Interview", InterviewSchema);
 
 module.exports = InterviewModel;

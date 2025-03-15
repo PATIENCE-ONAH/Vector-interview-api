@@ -1,8 +1,11 @@
 const express = require("express");
-const { createInterviewController } = require("./interviewController");
+const InterviewController = require("./interviewController");
+
 
 const interviwRouter = express.Router();
 
-router.post("/create", createInterviewController);
+interviwRouter.post("/create", InterviewController.createInterview);
+interviwRouter.get("/", InterviewController.getAllInterviews);
+interviwRouter.get("/:id", InterviewController.getInterviewById);
 
 module.exports = interviwRouter;
